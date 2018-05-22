@@ -4,17 +4,34 @@ import Link from 'gatsby-link';
 const ContactPage = () => (
   <div>
     <h1>This is the homepage</h1>
-    <form data-netlify="true" method="POST" name="contact-form">
-      <label htmlFor="name">Name</label>
-      <input type="text" id="name" />
-      <br />
-      <label htmlFor="email">E-mail</label>
-      <input type="email" id="email" />
-      <br />
-      <label htmlFor="file">File</label>
-      <input type="file" id="file" />
-      <br />
-      <button type="submit">Send</button>
+    <form name="contact" method="POST" netlify>
+      <p>
+        <label>
+          Your Name: <input type="text" name="name" />
+        </label>
+      </p>
+      <p>
+        <label>
+          Your Email: <input type="email" name="email" />
+        </label>
+      </p>
+      <p>
+        <label>
+          Your Role:{' '}
+          <select name="role[]" multiple>
+            <option value="leader">Leader</option>
+            <option value="follower">Follower</option>
+          </select>
+        </label>
+      </p>
+      <p>
+        <label>
+          Message: <textarea name="message" />
+        </label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
     </form>
     <Link to="/">Go to homepage</Link>
   </div>
