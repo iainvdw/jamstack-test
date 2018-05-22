@@ -4,7 +4,7 @@ import Link from 'gatsby-link';
 const ContactPage = () => (
   <div>
     <h1>This is the homepage</h1>
-    <form netlify="netlify" asdf="asdf" encType="multipart/form-data" name="contact-form">
+    <form netlify="netlify" name="contact-form">
       <label htmlFor="name">Name</label>
       <input type="text" id="name" />
       <br />
