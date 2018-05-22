@@ -17,10 +17,10 @@ module.exports = {
         background_color: '#b4da55',
         theme_color: '#b4444d',
         display: 'minimal-ui',
-        icon: 'static/images/icons/icon.png', // This path is relative to the root of the site.
+        icon: 'static/images/icons/icon.png',
       },
     },
-    'gatsby-plugin-offline',
+    // 'gatsby-plugin-offline',
     {
       resolve: 'gatsby-source-contentful',
       options: {
