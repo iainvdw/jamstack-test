@@ -7,7 +7,7 @@ module.exports = {
     title: 'Gatsby Default Starter',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-react-next',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -28,5 +28,6 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    'gatsby-plugin-react-helmet',
   ],
 };
