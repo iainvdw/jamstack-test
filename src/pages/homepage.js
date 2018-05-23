@@ -7,6 +7,7 @@ const HomePage = () => (
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <Link to="/articles/">Go to articles</Link>
+    <br />
     <Link to="/contact/">Contact us</Link>
   </div>
 );
