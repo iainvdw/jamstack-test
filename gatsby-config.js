@@ -10,12 +10,13 @@ module.exports = {
   plugins: [
     // 'gatsby-plugin-react-next', // React 16 upgrade
     'gatsby-plugin-preact', // Use Preact instead of React
-    {
-      resolve: 'gatsby-plugin-sentry',
-      options: {
-        dsn: process.env.SENTRY_DSN,
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-sentry',
+    //   options: {
+    //     dsn: process.env.SENTRY_DSN,
+    //     version: '3.24.0',
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
