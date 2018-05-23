@@ -21,7 +21,7 @@ module.exports = {
         icon: 'static/images/icons/icon.png',
       },
     },
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-source-contentful',
       options: {
