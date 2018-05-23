@@ -5,7 +5,7 @@ const ArticleOverview = props => (
   <div>
     <h1>Articles!</h1>
     <ul>
-      {props.pathContext.articles.map(({ title, header, slug }) => (
+      {props.pathContext.articles.map(({ node: { title, header, slug } }) => (
         <li>
           <h2>{title}</h2>
           {header ? <img src={header.file.url} alt={header.description} /> : null}
