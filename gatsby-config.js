@@ -7,7 +7,8 @@ module.exports = {
     title: 'Gatsby Default Starter',
   },
   plugins: [
-    'gatsby-plugin-react-next',
+    // 'gatsby-plugin-react-next', // React 16 upgrade
+    'gatsby-plugin-preact', // Use Preact instead of React
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
