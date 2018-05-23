@@ -5,6 +5,7 @@ dotenv.config();
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
+    siteUrl: 'https://jamstack-test.iainvanderwiel.nl/',
   },
   plugins: [
     // 'gatsby-plugin-react-next', // React 16 upgrade
