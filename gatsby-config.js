@@ -10,6 +10,12 @@ module.exports = {
     // 'gatsby-plugin-react-next', // React 16 upgrade
     'gatsby-plugin-preact', // Use Preact instead of React
     {
+      resolve: 'gatsby-plugin-sentry',
+      options: {
+        dsn: process.env.SENTRY_DSN,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Gatsby POC',
@@ -30,5 +36,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
   ],
 };
